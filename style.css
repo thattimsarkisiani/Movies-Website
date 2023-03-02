@@ -1,0 +1,169 @@
+@import url('https://free.bboxtype.com/embedfonts/?family=FiraGO:300,400,500,600,700,800,900');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'FiraGO', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'FiraGO', sans-serif;
+}
+
+body{
+    background: #121C24;
+}
+
+.container{
+    font-size: 16px;
+    width: 90vw;
+    max-width: 37.5em;
+    padding: 30px;
+    background-color: #ffffff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 15px;
+    box-shadow: 1.2em 2em 3em rgba(0, 0, 0, 0.2);
+}
+
+.search-container{
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 0.6em;
+}
+
+.search-container input, .search-container button{
+    font-size: 0.9em;
+    outline: none;
+    border-radius: 8px;
+}
+
+.search-container input{
+    background-color: transparent;
+    border: 1px solid #c1c1c1;
+    color: #000000;
+    padding: 0.7em;
+}
+
+.search-container input:focus{
+    border-color: #000000;
+}
+
+.search-container button{
+    background-color: #102A39;
+    border: none;
+    color: #00E0FF;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 13px 0px;
+}
+
+#result{
+    color: #000000;
+}
+
+.info{
+    position: relative;
+    display: grid;
+    grid-template-columns: 4fr 8fr;
+    margin-top: 40px;
+}
+
+.poster{
+    width: 100%;
+    border-radius: 5px;
+}
+
+h1{
+    text-align: center;
+    /* font-size: 1.5em; */
+    font-weight: 600;
+    /* letter-spacing: 0.06em; */
+}
+
+h2{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6em;
+    margin: 0.6em 0 0.9em 0;
+}
+
+.rating img{
+    width: 1.2em;
+}
+
+.rating h4{
+    display: inline-block;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.details{
+    display: flex;
+    font-size: 0.95em;
+    gap: 1em;
+    justify-content: center;
+    color: #000000;
+    margin: 0.6em 0;
+    font-weight: 300;
+}
+
+.genre{
+    display: flex;
+    justify-content: center;
+    gap: 1em
+}
+
+.genre div{
+    border: 1px solid #4a4a4a;
+    font-size: 0.75em;
+    padding: 0.4em 1.6em;
+    border-radius: 5px;
+    font-weight: 300;
+}
+
+h3{
+    font-weight: 500;
+    margin-top: 1.2em;
+    margin-bottom: 0.3em;
+}
+
+p{
+    font-size: 0.9em;
+    font-weight: 300;
+    line-height: 1.8em;
+    text-align: justify;
+    color: #4a4a4a;
+}
+
+.msg{
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        font-size: 14px;
+    }
+    .poster{
+        margin: auto;
+        width: auto;
+        max-height: 10.8em;
+    }
+
+    .info{
+        grid-template-columns: 1fr;
+    }
+
+}
